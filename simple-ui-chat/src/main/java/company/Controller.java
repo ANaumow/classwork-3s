@@ -16,7 +16,6 @@ public class Controller {
     private void initialize() {
         /*сообщаем клиенту куда закидывать сообщение,
          которые приходят от сервера*/
-        System.out.println(textAreaOfAllMessages);
         client = new Client(textAreaOfAllMessages);
         client.startConnection("localhost", 7320);
     }
